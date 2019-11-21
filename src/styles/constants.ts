@@ -8,4 +8,4 @@ export const BOARD_WIDTH = {
   desktop: '100vw',
 };
 
-export const BASE_FONT_SIZE = 20;
+export const BASE_FONT_SIZE = 26;

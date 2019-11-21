@@ -5,7 +5,6 @@ import TurtlePure from 'components/Turtle';
 import TextPure from 'components/TextInput';
 
 import device, { breakpoint } from 'styles/device';
-import rem from 'styles/rem';
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +12,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 `;
 
 const commonStyles = css`
@@ -26,10 +25,10 @@ const commonStyles = css`
 
 const Turtle = styled(TurtlePure)`
   ${commonStyles}
-  margin-bottom: ${rem(10)};
+  margin-bottom: 0.4em;
 
   @media ${device.mobileS} {
-    margin-bottom: ${rem(30)};
+    margin-bottom: 1em;
   }
 `;
 
