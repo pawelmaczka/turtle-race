@@ -1,4 +1,4 @@
-const breakpoint = {
+export const breakpoint = {
   mobileS: '320px',
   mobileM: '375px',
   mobileL: '425px',
