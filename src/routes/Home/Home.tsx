@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components/macro';
 
 import TurtlePure from 'components/Turtle';
-import TextPure from 'components/inputs/Text';
+import TextPure from 'components/TextInput';
 
 import device, { breakpoint } from 'styles/device';
 import rem from 'styles/rem';

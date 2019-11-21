@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyle from 'styles/GlobalStyle';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from '../Home';
+import Home from 'routes/Home';
 
 const App: React.FC = () => {
   return (

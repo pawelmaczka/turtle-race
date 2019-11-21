@@ -52,7 +52,7 @@ const Label = styled.label`
   }
 `;
 
-const Text: React.FC<Props> = ({ className, id, placeholder, label, maxLength }) => {
+const TextInput: React.FC<Props> = ({ className, id, placeholder, label, maxLength }) => {
   const [inputId] = useState<string>(id || uuid());
 
   return (
@@ -63,4 +63,4 @@ const Text: React.FC<Props> = ({ className, id, placeholder, label, maxLength })
   );
 };
 
-export default Text;
+export default TextInput;
