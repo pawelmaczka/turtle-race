@@ -14,5 +14,7 @@ jobs:
     - name: Run linter
       run: yarn lint
     - name: Run tests
+      env:
+        CI: true
       run: yarn test
 
