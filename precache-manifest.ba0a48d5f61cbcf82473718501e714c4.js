@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18ff15cbdd30d589bb868c146b700ccd",
+    "revision": "e72a9ceb4b42bf17ed627376fc022789",
     "url": "/turtle-race/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/turtle-race/static/js/2.53c9021b.chunk.js"
   },
   {
-    "revision": "7560fa92f04bb7163f83",
-    "url": "/turtle-race/static/js/main.0957aa7b.chunk.js"
+    "revision": "fdbaaf75ff715fdc268d",
+    "url": "/turtle-race/static/js/main.1648ebd1.chunk.js"
   },
   {
     "revision": "b6f248d341bfc1f21e1d",
