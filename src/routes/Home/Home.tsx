@@ -18,7 +18,6 @@ const Container = styled.div`
 
 const commonStyles = css`
   width: 90vw;
-  margin-bottom: 0.4em;
 
   @media ${device.mobileL} {
     width: calc(${breakpoint.mobileL} * 0.9);
@@ -28,12 +27,13 @@ const commonStyles = css`
 
 const Turtle = styled(TurtlePure)`
   ${commonStyles}
+  margin-bottom: 0.4em;
 `;
 
 const TextInput = styled(TextInputPure)`
   ${commonStyles}
-
   z-index: 1;
+  margin-bottom: 0.8em;
 `;
 
 const Buttons = styled.div<{ hidden?: boolean }>`
@@ -49,7 +49,6 @@ const Buttons = styled.div<{ hidden?: boolean }>`
     css`
       opacity: 0;
     `}
-
 
   @media ${device.mobileL} {
     flex-direction: row;
