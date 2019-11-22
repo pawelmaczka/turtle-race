@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/turtle-race/static/js/main.5007f462.chunk.js",
-    "main.js.map": "/turtle-race/static/js/main.5007f462.chunk.js.map",
+    "main.js": "/turtle-race/static/js/main.594b5aa5.chunk.js",
+    "main.js.map": "/turtle-race/static/js/main.594b5aa5.chunk.js.map",
     "runtime-main.js": "/turtle-race/static/js/runtime-main.455ca9e8.js",
     "runtime-main.js.map": "/turtle-race/static/js/runtime-main.455ca9e8.js.map",
     "static/js/2.53c9021b.chunk.js": "/turtle-race/static/js/2.53c9021b.chunk.js",
     "static/js/2.53c9021b.chunk.js.map": "/turtle-race/static/js/2.53c9021b.chunk.js.map",
     "index.html": "/turtle-race/index.html",
-    "precache-manifest.c9d9e83c6aca2d9c16387fdb16f0ae93.js": "/turtle-race/precache-manifest.c9d9e83c6aca2d9c16387fdb16f0ae93.js",
+    "precache-manifest.b7915adf27c891219e14797c555e2a32.js": "/turtle-race/precache-manifest.b7915adf27c891219e14797c555e2a32.js",
     "service-worker.js": "/turtle-race/service-worker.js",
     "static/media/turtle.svg": "/turtle-race/static/media/turtle.423911c4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.455ca9e8.js",
     "static/js/2.53c9021b.chunk.js",
-    "static/js/main.5007f462.chunk.js"
+    "static/js/main.594b5aa5.chunk.js"
   ]
 }
