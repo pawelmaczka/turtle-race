@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import styled, { css } from 'styled-components/macro';
+import { useHistory } from 'react-router-dom';
 
 import TurtlePure from 'components/Turtle';
 import TextInputPure from 'components/TextInput';
@@ -63,7 +64,12 @@ const Buttons = styled.div<{ hidden?: boolean }>`
   }
 `;
 
+const ButtonWithMargin = styled(Button)`
+  margin-bottom: 0.8em;
+`;
+
 const Home: React.FC = () => {
+  const history = useHistory();
   const [areButtonsDisabled, setAreButtonsDisabled] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -84,7 +90,6 @@ const Home: React.FC = () => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          console.log('submit');
         }}
       >
         <TextInput
@@ -93,22 +98,33 @@ const Home: React.FC = () => {
           maxLength={20}
           onChange={onNicknameChange}
           disabled={isLoading}
+          id="nickname"
         />
         <Buttons hidden={areButtonsDisabled}>
-          <Button
+          <ButtonWithMargin
+            big
             onClick={() => {
+              setTimeout(() => {
+                history.push('/games');
+              }, 2000);
               setIsLoading(true);
-              console.log('hello');
             }}
             disabled={areButtonsDisabled}
             isLoading={isLoading}
             type="submit"
           >
             New Game
-          </Button>
-          <Button disabled={areButtonsDisabled} type="button">
+          </ButtonWithMargin>
+          <ButtonWithMargin
+            big
+            disabled={areButtonsDisabled}
+            type="button"
+            onClick={() => {
+              history.push('/games');
+            }}
+          >
             Find Game
-          </Button>
+          </ButtonWithMargin>
         </Buttons>
       </form>
     </Container>

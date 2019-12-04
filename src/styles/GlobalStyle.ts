@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
 
     min-width: 300px;
   }
+
+  h1 {
+    font-size: 1.8rem;
+  }
 `;
 
 export default GlobalStyle;

@@ -28,6 +28,7 @@ const fadeOutAnimation = keyframes`
 const Container = styled.div<{ fadeIn: boolean; fadeOut: boolean }>`
   position: relative;
   z-index: 2;
+
   ${({ fadeIn }) =>
     fadeIn &&
     css`

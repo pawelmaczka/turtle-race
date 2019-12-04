@@ -60,10 +60,17 @@ module.exports = {
       ],
       "import/no-unresolved": 0,
       "import/prefer-default-export": 0,
+      "import/no-extraneous-dependencies": 0,
       "react-hooks/exhaustive-deps": "warn",
       "react-hooks/rules-of-hooks": "error",
       "react/jsx-filename-extension": 0,
       "react/prop-types": 0,
       "react/jsx-props-no-spreading": 0,
+      '@typescript-eslint/explicit-function-return-type': [
+        'error',
+        {
+          allowExpressions: true
+        }
+      ]
     }
 };

@@ -8,6 +8,8 @@ interface Props {
   onClick?: () => void;
   disabled?: boolean;
   isLoading?: boolean;
+  className?: string;
+  big?: boolean;
 }
 
 const Btn = styled.button<Props>`
@@ -18,12 +20,11 @@ const Btn = styled.button<Props>`
   padding: 0.5em;
   border: none;
   border-radius: 0.2em;
-  margin-bottom: 0.8em;
 
   text-align: center;
   text-decoration: none;
   font: inherit;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
   background-color: ${color.purple};
 
@@ -31,6 +32,12 @@ const Btn = styled.button<Props>`
     cursor: pointer;
     opacity: 0.7;
   }
+
+  ${({ big }) =>
+    big &&
+    css`
+      font-size: 1.5rem;
+    `}
 `;
 
 const ChildrenContainer = styled.span<{ isLoading?: boolean }>`
@@ -43,8 +50,23 @@ const ChildrenContainer = styled.span<{ isLoading?: boolean }>`
     `}
 `;
 
-const Button: React.FC<Props> = ({ children, type, onClick, disabled, isLoading }) => (
-  <Btn type={type} onClick={onClick} disabled={disabled || isLoading} isLoading={isLoading}>
+const Button: React.FC<Props> = ({
+  children,
+  type,
+  onClick,
+  disabled,
+  isLoading,
+  className,
+  big,
+}) => (
+  <Btn
+    type={type}
+    onClick={onClick}
+    disabled={disabled || isLoading}
+    isLoading={isLoading}
+    className={className}
+    big={big}
+  >
     {isLoading && <Spinner />}
     <ChildrenContainer isLoading={isLoading}>{children}</ChildrenContainer>
   </Btn>

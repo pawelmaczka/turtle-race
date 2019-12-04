@@ -6,6 +6,9 @@ const color: { [name: string]: string } = {
   lightGreen: '#e0ffce',
   darkGreen: '#00a611',
   purple: '#9555af',
+  backgroundWhite: '#f6f5f5',
+  lightPink: '#fce7ff',
+  pureWhite: '#fff',
 };
 
 export default color;

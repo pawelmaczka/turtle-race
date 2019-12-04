@@ -1,19 +1,30 @@
 import React from 'react';
+import styled from 'styled-components/macro';
 import GlobalStyle from 'styles/GlobalStyle';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from 'routes/Home';
+import Games from 'routes/Games';
+
+const Application = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+`;
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <Application>
       <GlobalStyle />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/games" component={Games} />
         </Switch>
       </Router>
-    </div>
+    </Application>
   );
 };
 
